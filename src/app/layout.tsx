@@ -33,7 +33,7 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>
-          <DarkModeToggle />
+          {/* <DarkModeToggle /> */}
           {children}
         </ThemeProvider>
       </body>

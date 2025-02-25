@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Loginpage from "./login/page";
 import LoginForm from "./login/page";
+import DarkModeToggle from "../DarkMode/page";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +26,8 @@ export default function RootLayout({
   return (
     <div className="flex min-h-svh w-full items-center justify-center p-6 md:p-10">
       <div className="w-full max-w-sm">
-        <LoginForm />
+        <DarkModeToggle />
+        {children}
       </div>
     </div>
   );
